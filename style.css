@@ -12,7 +12,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-.row::after {
+.row::after, .menu::after, .s-b::after {
     content: "";
     display: block;
     clear: both;
@@ -54,10 +54,75 @@ body {
     text-align: center;
     font-size: 21px;
     line-height: 50px;
-    font-size: 21px;
     color: #2c71b8;
+    font-weight: 300;
 }
 .menu a:hover {
     background-color: #2c71b8;
     color: white;
 }
+.s-b div {
+    float: left;
+}
+.search {
+    width: 80%;
+    border: 1px solid #2c71b8;
+    height: 40px;
+    margin: 5px 0;
+    padding: 4px;    
+}
+.basket {
+    width: 20%;
+    height: 40px;
+    margin: 5px 0;    
+}
+.search input {
+    border: none;
+    background-color: inherit;
+    color: #2c71b8;
+    font-weight: 300;          
+}
+.search [type="search"] {
+    height: 30px;
+    width: 175px;
+    display: block;
+    padding: 0;
+    font-size: 21px;
+        
+}
+.search [type="search"]::-webkit-input-placeholder {color: #2c71b8; font-weight: 300;}
+.search-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #2c71b8;
+    text-align: center;
+    line-height: 30px;    
+}
+.basket a {
+    display: block;    
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    line-height: 45px;
+    float: right;
+    position: relative;          
+}
+div.counter {
+    position: absolute;
+    border: 1px solid #2c71b8;
+    border-radius: 10px;
+    background-color: #2c71b8;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 19px;
+    font-size: 12px;
+    font-weight: 400;
+    top: -10px;
+    left: -10px;
+    z-index: 10;       
+}
+
+
