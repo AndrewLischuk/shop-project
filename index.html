@@ -1,50 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop-project</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
-           <div class="row">
-               <div class="col-md-3">
-                   <div class="logo">
-                       <a href="">
-                           <img src="images/Logo.png" alt="">
-                       </a>
-                   </div>
-               </div>
-               <div class="col-md-6">
-                <nav>
-                    <ul class="menu">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Payments</a></li>
-                        <li><a href="">Shipping</a></li>
-                    </ul>
-                </nav>
-               </div>
-               <div class="col-md-3">
-                   <div class="s-b">
-                        <div class="search">
-                            <div><input type="search" placeholder="search" name="search"></div>
-                            <div class="search-btn"><input type="image" src="images/search.png" alt="search"></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="">
+                            <img src="images/Logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <nav>
+                        <ul class="menu row">
+                            <li><a href="">Home</a></li>
+                            <li class="drop"><a class="dropbtn" href="">Products <i class="fa fa-caret-down"></i></a>
+                                <ul class="submenu col-md-24">
+                                    <li><a href="">Lorem ipsum dolor</a></li>
+                                    <li><a href="">Sit amet</a></li>
+                                    <li><a href="">Consectetur adipisicing</a></li>
+                                    <li><a href="">Tempor incididunt</a></li>
+                                    <li><a href="">Dolore magna aliqua</a></li>
+                                    <li><a href="">Ut enim ad minim veniam</a></li>
+                                    <li><a href="">Quis nostrud</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Payments</a></li>
+                            <li><a href="">Shipping</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <div class="s-b">
+                        <div class="col-md-9">
+                            <div class="search">
+                                <div><input type="search" placeholder="search" name="search"></div>
+                                <div class="search-btn"><input type="image" src="images/search.png" alt="search"></div>
+                            </div>
                         </div>
-                        <div class="basket">
-                            <a href=""><img src="./images/basket.png" alt=""><div class="counter">4</div></a>                            
+                        <div class="col-md-3">
+                            <div class="cart">
+                                <a href=""><img src="./images/cart_blue.png" alt="">
+                                    <div class="counter">4</div>
+                                </a>
+                            </div>
                         </div>
-                   </div>                                       
-               </div>
-           </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <main><div class="main">Main</div></main>
-    <footer><div class="footer">Footer</div></footer>
+    <main>
+        <div class="main">
+            <div class="col-md-12">
+                <div class="slide">S l i d e</div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="filter">
+                            Filter
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="adress"><a href="">Homepage</a></div>
+                        <div class="prod-title">Laptops and Tablets</div>
+                        <div class="products row">
+                            <div class="col-md-4">
+                                <div class="device">
+                                    <div class="device-img">
+                                        <div><img src="images/1.png" alt="product">
+                                            <div class="check-icons">
+                                                <div><img src="images/check_blue.png" alt="check"></div>
+                                                <div><img src="images/like_blue.png" alt="check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="dev-name">#1 Device Name</h2>
+                                    <p class="dev-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="dev-descr"><span>TYPE:</span> Laptop</p>
+                                    <p class="dev-descr"><span>SCREEN SIZE:</span> 7 inches</p>
+                                    <p class="dev-descr"><span>RAM:</span> 1GB</p>
+                                    <p class="price">$599<sup>25</sup></p>
+                                    <div class="dev-btn">
+                                        <p class="details">MORE DETAILS</p>
+                                        <p class="add-cart">ADD TO CART<img src="images/cart.png" alt="cart"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="device">
+                                    <div class="device-img">
+                                        <div><img src="images/2.png" alt="product">
+                                            <div class="check-icons">
+                                                <div><img src="images/check_blue.png" alt="check"></div>
+                                                <div><img src="images/like_blue.png" alt="check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="dev-name">#1 Device Name</h2>
+                                    <p class="dev-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="dev-descr"><span>TYPE:</span> Laptop</p>
+                                    <p class="dev-descr"><span>SCREEN SIZE:</span> 7 inches</p>
+                                    <p class="dev-descr"><span>RAM:</span> 1GB</p>
+                                    <p class="price">$1250<sup>99</sup></p>
+                                    <div class="dev-btn">
+                                        <p class="details">MORE DETAILS</p>
+                                        <p class="add-cart">ADD TO CART<img src="images/cart.png" alt="cart"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="device">
+                                    <div class="device-img">
+                                        <div><img src="images/3.png" alt="product">
+                                            <div class="check-icons">
+                                                <div><img src="images/check_blue.png" alt="check"></div>
+                                                <div><img src="images/like_blue.png" alt="check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="dev-name">#1 Device Name</h2>
+                                    <p class="dev-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="dev-descr"><span>TYPE:</span> Laptop</p>
+                                    <p class="dev-descr"><span>SCREEN SIZE:</span> 7 inches</p>
+                                    <p class="dev-descr"><span>RAM:</span> 1GB</p>
+                                    <p class="price">$399<sup>50</sup></p>
+                                    <div class="dev-btn">
+                                        <p class="details">MORE DETAILS</p>
+                                        <p class="add-cart">ADD TO CART<img src="images/cart.png" alt="cart"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="device">
+                                    <div class="device-img">
+                                        <div><img src="images/4.png" alt="product">
+                                            <div class="check-icons">
+                                                <div><img src="images/check_blue.png" alt="check"></div>
+                                                <div><img src="images/like_blue.png" alt="check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="dev-name">#1 Device Name</h2>
+                                    <p class="dev-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="dev-descr"><span>TYPE:</span> Laptop</p>
+                                    <p class="dev-descr"><span>SCREEN SIZE:</span> 7 inches</p>
+                                    <p class="dev-descr"><span>RAM:</span> 1GB</p>
+                                    <p class="price">$599<sup>25</sup></p>
+                                    <div class="dev-btn">
+                                        <p class="details">MORE DETAILS</p>
+                                        <p class="add-cart">ADD TO CART<img src="images/cart.png" alt="cart"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="device">
+                                    <div class="device-img">
+                                        <div><img src="images/5.png" alt="product">
+                                            <div class="check-icons">
+                                                <div><img src="images/check_blue.png" alt="check"></div>
+                                                <div><img src="images/like_blue.png" alt="check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="dev-name">#1 Device Name</h2>
+                                    <p class="dev-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="dev-descr"><span>TYPE:</span> Laptop</p>
+                                    <p class="dev-descr"><span>SCREEN SIZE:</span> 7 inches</p>
+                                    <p class="dev-descr"><span>RAM:</span> 1GB</p>
+                                    <p class="price">$1250<sup>99</sup></p>
+                                    <div class="dev-btn">
+                                        <p class="details">MORE DETAILS</p>
+                                        <p class="add-cart">ADD TO CART<img src="images/cart.png" alt="cart"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="device">
+                                    <div class="device-img">
+                                        <div><img src="images/6.png" alt="product">
+                                            <div class="check-icons">
+                                                <div><img src="images/check_blue.png" alt="check"></div>
+                                                <div><img src="images/like_blue.png" alt="check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="dev-name">#1 Device Name</h2>
+                                    <p class="dev-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="dev-descr"><span>TYPE:</span> Laptop</p>
+                                    <p class="dev-descr"><span>SCREEN SIZE:</span> 7 inches</p>
+                                    <p class="dev-descr"><span>RAM:</span> 1GB</p>
+                                    <p class="price">$399<sup>50</sup></p>
+                                    <div class="dev-btn">
+                                        <p class="details">MORE DETAILS</p>
+                                        <p class="add-cart">ADD TO CART<img src="images/cart.png" alt="cart"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="device">
+                                    <div class="device-img">
+                                        <div><img src="images/7.png" alt="product">
+                                            <div class="check-icons">
+                                                <div><img src="images/check_blue.png" alt="check"></div>
+                                                <div><img src="images/like_blue.png" alt="check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="dev-name">#1 Device Name</h2>
+                                    <p class="dev-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="dev-descr"><span>TYPE:</span> Laptop</p>
+                                    <p class="dev-descr"><span>SCREEN SIZE:</span> 7 inches</p>
+                                    <p class="dev-descr"><span>RAM:</span> 1GB</p>
+                                    <p class="price">$599<sup>25</sup></p>
+                                    <div class="dev-btn">
+                                        <p class="details">MORE DETAILS</p>
+                                        <p class="add-cart">ADD TO CART<img src="images/cart.png" alt="cart"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="device">
+                                    <div class="device-img">
+                                        <div><img src="images/8.png" alt="product">
+                                            <div class="check-icons">
+                                                <div><img src="images/check_blue.png" alt="check"></div>
+                                                <div><img src="images/like_blue.png" alt="check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="dev-name">#1 Device Name</h2>
+                                    <p class="dev-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="dev-descr"><span>TYPE:</span> Laptop</p>
+                                    <p class="dev-descr"><span>SCREEN SIZE:</span> 7 inches</p>
+                                    <p class="dev-descr"><span>RAM:</span> 1GB</p>
+                                    <p class="price">$1250<sup>99</sup></p>
+                                    <div class="dev-btn">
+                                        <p class="details">MORE DETAILS</p>
+                                        <p class="add-cart">ADD TO CART<img src="images/cart.png" alt="cart"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="device">
+                                    <div class="device-img">
+                                        <div><img src="images/9.png" alt="product">
+                                            <div class="check-icons">
+                                                <div><img src="images/check_blue.png" alt="check"></div>
+                                                <div><img src="images/like_blue.png" alt="check"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="dev-name">#1 Device Name</h2>
+                                    <p class="dev-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p class="dev-descr"><span>TYPE:</span> Laptop</p>
+                                    <p class="dev-descr"><span>SCREEN SIZE:</span> 7 inches</p>
+                                    <p class="dev-descr"><span>RAM:</span> 1GB</p>
+                                    <p class="price">$399<sup>50</sup></p>
+                                    <div class="dev-btn">
+                                        <p class="details">MORE DETAILS</p>
+                                        <p class="add-cart">ADD TO CART<img src="images/cart.png" alt="cart"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">Footer</div>
+    </footer>
 </body>
+
 </html>
