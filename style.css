@@ -200,12 +200,6 @@ div.counter {
     background-color: white;
     color: #2c71b8;
 }
-
-.filter {
-    height: 845px;
-    background-color: rgba(255, 255, 255, 0.20);
-}
-
 .slide {
     height: 400px;
     text-align: center;
@@ -266,12 +260,14 @@ div .device-img {
     text-align: center;
 }
 
-.dev-btn p {
+.dev-btn p, .submit {
     border: 1px solid white;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 10px 30px;
+    font-size: 21px;
+    font-weight: bold;
 }
 
 p.add-cart {
@@ -308,4 +304,60 @@ p.add-cart {
     padding: 5px;
     margin: 5px 0;
     line-height: 27px;
+}
+.load-more {
+    font-size: 36px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 90px;
+}
+.checkbox-input {
+    display: none;
+}
+.checkbox-label::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    cursor: pointer;    
+}
+.checkbox-input:checked + .checkbox-label::before {
+    background-color: white;
+}
+.checkbox-label, .more-options {
+    font-size: 21px;
+    font-weight: 300;
+    color: white;       
+}
+.checkbox-label span {padding-left: 10px;}
+.filter {
+    /* height: 845px; */
+    background-color: rgba(255, 255, 255, 0.20);
+    padding: 30px;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+} 
+.filter-dev1 {padding-bottom: 65px;}
+.filter-dev1:last-child {padding-bottom: 30px;}
+.filter-dev1 li {padding-top: 25px;}
+.more-options {padding-bottom: 30px;}
+.submit {
+    margin: 0;
+    background-color: rgba(44, 113, 184, 0.75);
+}
+.footer {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 25px 0;
+}
+.footer div {
+    height: 50px;    
+    color: #2c71b8;
+    font-size: 21px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 45px;
 }
