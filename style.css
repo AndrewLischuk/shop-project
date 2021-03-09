@@ -125,7 +125,10 @@ body {
     display: block;
     padding-left: 15px;
     font-size: 21px;
-
+}
+.search [type="search"]:focus {
+    outline: none;
+    outline-offset: 0;
 }
 
 .search [type="search"]::-webkit-input-placeholder {
@@ -149,6 +152,9 @@ body {
     text-align: center;
     line-height: 45px;
     position: relative;
+}
+.cart a:hover {
+    background-color: rgba(44, 113, 184, 0.15);
 }
 
 div.counter {
@@ -229,9 +235,31 @@ div.counter {
     text-align: center;
 }
 
-div .device-img {
-    position: relative;
-    
+div.device-img {
+    position: relative;    
+}
+
+.check-icons {    
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 10;       
+}
+.check-icons div {
+    background-color: transparent;
+    border: 1px solid #2c71b8;
+    height: 32px;   
+    padding: 5px;
+    margin: 5px 0;
+    line-height: 27px;
+}
+.check-icons-blue-bg {
+    background-color: #2c71b8 !important;    
+}
+
+.check-icons div:hover {
+    background-color: rgba(44, 113, 184, 0.35);
+    border: 1px solid transparent;
 }
 
 .dev-name {    
@@ -260,19 +288,32 @@ div .device-img {
     text-align: center;
 }
 
-.dev-btn p, .submit {
-    border: 1px solid white;
-    text-align: center;
+.details, .add-cart, .submit {
+    width: 210px;
+    height: 55px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 10px 30px;
+    background-color: rgba(44, 113, 184, 0.75);
+    border: 1px solid white;
+    color: white;
     font-size: 21px;
     font-weight: bold;
+    text-align: center;      
+}
+.add-cart {margin-bottom: 20px;}
+
+.details:hover, .add-cart:hover, .submit:hover {
+    background-color: rgba(255, 255, 255, 0.20);
+    border: 1px solid transparent;
+}
+.details:active, .add-cart:active, .submit:active {
+    border: 1px solid white;
 }
 
-p.add-cart {
-    background-color: rgba(255, 255, 255, 0.20);
-    margin-bottom: 20px;    
+.details:focus, .add-cart:focus, .submit:focus {
+    outline: none;
+    outline-offset: 0;
 }
 
 .add-cart img {
@@ -292,26 +333,21 @@ p.add-cart {
     margin-bottom: 20px;
     color: white;
 }
-.check-icons {    
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    z-index: 10;       
-}
-.check-icons div {
-    border: 1px solid #2c71b8;
-    height: 32px;   
-    padding: 5px;
-    margin: 5px 0;
-    line-height: 27px;
-}
+
 .load-more {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 90px;
+    margin-left: 300px;
+    margin-right: 300px;
     font-size: 36px;
     font-weight: 300;
+    text-decoration: none;
     color: white;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 90px;
+    text-align: center;    
+}
+a.load-more:hover {
+    text-decoration: underline;
 }
 .checkbox-input {
     display: none;
@@ -323,6 +359,9 @@ p.add-cart {
     height: 10px;
     border: 1px solid white;
     cursor: pointer;    
+}
+.checkbox-label:hover {
+    color: rgba(255, 255, 255, 0.35);
 }
 .checkbox-input:checked + .checkbox-label::before {
     background-color: white;
@@ -340,11 +379,18 @@ p.add-cart {
     font-size: 21px;
     font-weight: bold;
     color: white;
-} 
+}
+a.more-options {
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 30px;
+}
+.filter a:hover {text-decoration-line: underline;}
+
 .filter-dev1 {padding-bottom: 65px;}
 .filter-dev1:last-child {padding-bottom: 30px;}
 .filter-dev1 li {padding-top: 25px;}
-.more-options {padding-bottom: 30px;}
+
 .submit {
     margin: 0;
     background-color: rgba(44, 113, 184, 0.75);
